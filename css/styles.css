@@ -69,6 +69,7 @@ footer a {
 .navigation {
   display: flex;
   align-items: center;
+
   border-bottom: 1px solid #ececec;
 }
 
@@ -321,6 +322,12 @@ footer a {
 footer {
   background-color: var(--secondary-bg-color);
   font-style: normal;
+}
+
+.logo.foot {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 0px;
 }
 
 .foot {
