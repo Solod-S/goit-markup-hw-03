@@ -352,6 +352,7 @@ address p {
   color: var(--primary-bg-color);
 }
 .contacts a {
+  display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
 }
