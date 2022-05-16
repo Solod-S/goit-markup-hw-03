@@ -47,7 +47,11 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
+}
+
+.obvodka {
+  /* outline: 2px solid tomato; */
 }
 
 header a,
@@ -65,7 +69,9 @@ footer a {
 .navigation {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
+
 .main-nav {
   display: flex;
   padding: 32px 0;
@@ -88,7 +94,6 @@ footer a {
 .auth-nav {
   display: flex;
   margin-left: auto;
-  padding: inherit;
 }
 
 .auth-nav > li {
@@ -161,6 +166,9 @@ footer a {
 }
 
 .button {
+  display: inline-block;
+  padding: 10px;
+
   color: var(--primary-bg-color);
   background-color: var(--primary-accent-color);
   cursor: pointer;
@@ -172,8 +180,6 @@ footer a {
   line-height: 1.8;
   letter-spacing: 0.06em;
   font-family: inherit;
-
-  display: inline-block;
 }
 
 .button:hover {
@@ -308,8 +314,6 @@ footer a {
 /* < !--Футер--> */
 
 .foot-section {
-  margin: 0 auto;
-  width: 1200px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -388,13 +392,23 @@ address p {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc(100% / 3-30px);
-  margin-top: -15px;
-  margin-left: -15px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .portfolio-examples li {
-  margin-left: 15px;
-  margin-top: 15px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.portfolio-thmb {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio a {
@@ -402,7 +416,6 @@ address p {
 }
 
 .portfolio-img {
-  margin-bottom: 20px;
 }
 
 .portfolio-title {
