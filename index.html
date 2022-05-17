@@ -37,7 +37,7 @@
     </header>
     <main>
       <!-- Герой -->
-      <section class="section hero">
+      <section class="hero">
         <h1 class="hero-title">
           Эффективные решения <br />
           для вашего бизнеса
@@ -45,7 +45,7 @@
         <button type="button" class="button">Заказать услугу</button>
       </section>
       <!--Род деятельности-->
-      <section class="section">
+      <section class="section-features">
         <div class="container features">
           <h2 class="hide">Наши особенности</h2>
           <!--Потом спрячем через стили-->
@@ -76,6 +76,8 @@
             </li>
           </ul>
         </div>
+      </section>
+      <section class="section">
         <div class="container">
           <h2 class="characteristic-title">Чем мы занимаемся</h2>
           <ul class="list characteristic-imgs">
@@ -120,18 +122,24 @@
             </li>
             <li class="member-li">
               <img class="member-img" src="./images/olga.jpg" alt="ольга" width="270" />
-              <h3 class="member-title">Ольга Репина</h3>
-              <p class="member-position" lang="en">Frontend Developer</p>
+              <div class="member-dscr">
+                <h3 class="member-title">Ольга Репина</h3>
+                <p class="member-position" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="member-li">
               <img class="member-img" src="./images/nikola.jpg" alt="николай" width="270" />
-              <h3 class="member-title">Николай Тарасов</h3>
-              <p class="member-position" lang="en">Marketing</p>
+              <div class="member-dscr">
+                <h3 class="member-title">Николай Тарасов</h3>
+                <p class="member-position" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="member-li">
               <img class="member-img" src="./images/mihail.jpg" alt="михаил" width="270" />
-              <h3 class="member-title">Михаил Ермаков</h3>
-              <p class="member-position" lang="en">UI Designer</p>
+              <div class="member-dscr">
+                <h3 class="member-title">Михаил Ермаков</h3>
+                <p class="member-position" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -139,7 +147,7 @@
     </main>
     <!--Футер-->
     <footer>
-      <section class="foot-section">
+      <section>
         <div class="container">
           <a href="./index.html" class="logo foot"><span>Web</span>Studio</a>
           <address>

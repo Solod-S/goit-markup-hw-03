@@ -4,6 +4,11 @@
 
 /* есть в нормалайзере */
 
+/* :first-child
+:last-child
+или
+:not(:last-child) */
+
 :root {
   --primary-text-color: #757575;
   --primary-title-color: #212121;
@@ -42,9 +47,9 @@ ul {
 
 /* !!!!!!!!!!!!!!! Задал ширину контейнера (дивов) + выровнял по середине margin-left + отсутпы 15пикс !!!!!!!!!!!!!!*/
 .container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1200px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -58,6 +63,12 @@ ul {
 
 .obvodka {
   /* outline: 2px solid tomato; */
+}
+
+header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
 }
 
 header a,
@@ -75,13 +86,10 @@ footer a {
 .navigation {
   display: flex;
   align-items: center;
-
-  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
   display: flex;
-  padding: 32px 0;
   align-items: center;
 }
 
@@ -156,6 +164,8 @@ footer a {
 /* < !-- Герой начало --> */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--secondary-bg-color);
   text-align: center;
 }
@@ -208,6 +218,10 @@ footer a {
   display: flex;
 }
 
+.section-features {
+  padding-top: 94px;
+}
+
 .features-list {
   display: flex;
 }
@@ -239,8 +253,6 @@ footer a {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-
-  margin-bottom: 94px;
 }
 
 .characteristic-imgs {
@@ -279,8 +291,12 @@ footer a {
   margin-right: 30px;
 
   width: 270px;
-  max-height: 368px;
   background-color: var(--primary-bg-color);
+}
+
+.member-dscr {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -293,7 +309,6 @@ footer a {
   margin-bottom: 50px;
 }
 .member-img {
-  margin-bottom: 30px;
 }
 
 .member-title {
@@ -301,14 +316,14 @@ footer a {
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: 0.03em;
 
   text-align: center;
 }
 
 .member-position {
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: 0.03em;
 
   text-align: center;
@@ -320,14 +335,11 @@ footer a {
 
 /* < !--Футер--> */
 
-.foot-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 footer {
   background-color: var(--secondary-bg-color);
   font-style: normal;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo.foot {
@@ -357,10 +369,14 @@ address p {
 address p {
   color: var(--primary-bg-color);
 }
+
+.contacts li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .contacts a {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -373,8 +389,12 @@ address p {
   justify-content: center;
   margin-bottom: 50px;
 }
-.portfolio-button {
+
+.portfolio-buttons li:not(:last-child) {
   margin-right: 8px;
+}
+
+.portfolio-button {
   padding: 6px 22px;
 
   font-weight: 500;
