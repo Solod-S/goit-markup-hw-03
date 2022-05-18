@@ -8,7 +8,6 @@
 :last-child
 или
 :not(:last-child) */
-
 :root {
   --primary-text-color: #757575;
   --primary-title-color: #212121;
